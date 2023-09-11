@@ -23,7 +23,7 @@ namespace csharp_biblioteca
                 - Settore: {base.Settore}
                 - Scaffale: {base.Scaffale}
                 - Autore: {base.NomeAutore} {base.CognomeAutore}
-                - Titolo: {this.Pagine}
+                - Pagine: {this.Pagine}
                 
             ");
 
