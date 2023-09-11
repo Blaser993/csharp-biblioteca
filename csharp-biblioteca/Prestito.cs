@@ -9,15 +9,15 @@ namespace csharp_biblioteca
 {
     internal class Prestito
     {
-        public DateTime Inizio { get; set; }
+        public string Inizio { get; set; }
 
-        public DateTime Fine { get; set; }
+        public string Fine { get; set; }
 
         public string Cognome { get; set; }
 
         public string Nome { get; set; }
 
-        public Prestito(DateTime Inizio, DateTime Fine ,string Cognome, string Nome)
+        public Prestito(string Inizio, string Fine ,string Cognome, string Nome)
         {
             this.Inizio = Inizio;
             this.Fine = Fine;

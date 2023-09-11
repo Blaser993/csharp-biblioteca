@@ -14,4 +14,9 @@ namespace csharp_biblioteca
             this.Durata = Durata;
         }
     }
+
+    //public override void LeggiDvd()
+    //{
+    //    Console.WriteLine()
+    //}
 }

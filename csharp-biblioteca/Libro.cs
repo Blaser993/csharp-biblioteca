@@ -13,5 +13,22 @@ namespace csharp_biblioteca
         { 
         this.Pagine = Pagine;
         }
+
+
+        public override void LeggiDocumento()
+        {
+            Console.WriteLine($@"   
+                - Titolo: {base.Titolo}
+                - Anno: {base.Anno}
+                - Settore: {base.Settore}
+                - Scaffale: {base.Scaffale}
+                - Autore: {base.NomeAutore} {base.CognomeAutore}
+                - Titolo: {this.Pagine}
+                
+            ");
+
+        }
     }
+
+
 }

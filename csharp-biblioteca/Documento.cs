@@ -17,7 +17,7 @@ namespace csharp_biblioteca
 
         public uint Anno { get; set; }
 
-        public string  Settore {  get; set; }
+        public string  Settore { get; set; }
 
         public string Scaffale { get; set; }
 
@@ -27,15 +27,27 @@ namespace csharp_biblioteca
 
 
         public Documento(string CodeId, string Titolo, uint Anno, string Settore, string Scaffale, string NomeAutore, string CognomeAutore)
-        { 
+        {
             this.CodeId = CodeId;
             this.Titolo = Titolo;
             this.Anno = Anno;
             this.Settore = Settore;
             this.Scaffale = Scaffale;
             this.NomeAutore = NomeAutore;
-            this.CognomeAutore = CognomeAutore
-           
+            this.CognomeAutore = CognomeAutore;
+
+        }
+
+        public virtual void LeggiDocumento()
+        {
+            Console.WriteLine(
+                    $@"
+        - Titolo: {this.Titolo}
+        - Anno: {this.Anno}
+        - Settore: {this.Settore}
+        - Scaffale: {this.Scaffale}
+        - Autore: {this.NomeAutore} {this.CognomeAutore}");
+                                
         }
 
     }
