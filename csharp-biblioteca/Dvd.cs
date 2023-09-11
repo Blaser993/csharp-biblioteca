@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace csharp_biblioteca
 {
-    internal class Dvd : Documento{
+    public class Dvd : Documento{
+        public float Durata { get; set; }
 
+        public Dvd(float Durata, string CodeId, string Titolo, uint Anno, string Settore, string Scaffale, string NomeAutore, string CognomeAutore) : base(CodeId, Titolo, Anno, Settore, Scaffale, NomeAutore, CognomeAutore)
+        {
+            this.Durata = Durata;
+        }
     }
 }
